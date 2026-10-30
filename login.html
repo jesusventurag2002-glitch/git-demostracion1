@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+</head>
+<body>
+  <div class="login-container">
+    <h2>Log In</h2>
+    <form action="/login-handler" method="POST">
+      <div class="input-group">
+        <label for="username">Username or Email</label>
+        <input type="text" id="username" name="username" required>
+      </div>
+
+      <div class="input-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+
+      <div class="form-actions">
+        <label>
+          <input type="checkbox" name="remember"> Remember me
+        </label>
+        <a href="#forgot">Forgot password?</a>
+      </div>
+
+      <button type="submit">Log In</button>
+    </form>
+    <p>Don't have an account? <a href="signup.html">Sign up</a></p>
+  </div>
+</body>
+</html>
+```
+
+### Key Form Attributes
+* **`action`**: The URL or backend script (e.g., PHP, Node.js, Python) where the form data is sent upon submission.
+* **`method`**: The HTTP method used to send data; use **`POST`** for login forms so credentials are not exposed in the browser URL.
+* **`required`**: A native HTML attribute that prevents submission if the username or password fields are empty.
+* **`type="password"`**: Masks the user's keystrokes for privacy and security.
+
+<FollowUp>
+Are you looking to add **CSS styling**, connect this to a **backend database (like PHP or Node.js)**, or add **JavaScript validation**?
+</FollowUp>
